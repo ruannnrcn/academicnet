@@ -31,7 +31,7 @@ public class AlunoController {
       return alunoRepository.findAll();
     }
 
-    @GetMapping("{/matricula}")
+    @GetMapping("/{matricula}")
     public Optional<Aluno> listarAluno(@PathVariable String matricula ) {
        return alunoRepository.findById(matricula);
       

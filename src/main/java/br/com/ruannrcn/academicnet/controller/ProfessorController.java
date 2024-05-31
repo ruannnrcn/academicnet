@@ -34,7 +34,6 @@ public class ProfessorController {
         return professorRepository.findById(matricula);
     }
     
-
     @GetMapping
     public List<Professor> listAllProfessor() {
       return professorRepository.findAll();
